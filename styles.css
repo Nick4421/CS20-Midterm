@@ -76,12 +76,13 @@ footer img {
 .all-products-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .product-container {
   flex: 1; /* Same dimensions for all product boxes */
-  flex-wrap: wrap; /* Not wrapping, figure it out */
-  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
   background-color: #0bde00;
   padding: 20px;
   display: flex;
@@ -89,7 +90,6 @@ footer img {
   align-items: center;
   text-align: center;
   border-radius: 20px;
-  max-width: 300px;
   margin: 30px;
 }
 
@@ -97,11 +97,19 @@ footer img {
   background-color: red;
 }
 
-/* Targets the product title as well as product description */
-.product-text,
+/* Product title */
 .product-text strong {
   background-color: #0bde00;
   color: #121212;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+/* Product text */
+.product-text {
+  background-color: #0bde00;
+  color: #121212;
+  font-size: 15px;
 }
 
 /* End Products Page Styling */

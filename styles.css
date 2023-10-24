@@ -112,4 +112,11 @@ footer img {
   font-size: 15px;
 }
 
+/* Product categories */
+.product-text em {
+  background-color: #0bde00;
+  color: #121212;
+  font-size: 12px;
+}
+
 /* End Products Page Styling */

@@ -37,40 +37,7 @@
     </ul>
 
     <h1>Products</h1>
-    <div class="all-products-container">
-      <div class="product-container">
-        <img src="#" />
-        <div class="product-text">
-          <strong>Mini Camera</strong>
-          <br />
-          Discreet surveillance with high-quality video and audio
-          <br />
-          <em>Surveillance</em>
-        </div>
-      </div>
-
-      <div class="product-container">
-        <img src="#" />
-        <div class="product-text">
-          <strong>Night Vision Binoculars</strong>
-          <br />
-          See clearly in the dark
-          <br />
-          <em>Surveillance</em>
-        </div>
-      </div>
-
-      <div class="product-container">
-        <img src="#" />
-        <div class="product-text">
-          <strong>Microphone Bugs</strong>
-          <br />
-          Capture conversations with hidden microphones
-          <br />
-          <em>Surveillance</em>
-        </div>
-      </div>
-    </div>
+    <div class="all-products-container" id="main-product-container"></div>
 
     <footer>
       <ul>
@@ -96,17 +63,27 @@
     <script src="script.js"></script>
     <script>
       "use strict";
+
+      // builds html code for a given product
+      function buildProductHTML(product) {
+        let element = "";
+        element += '<div class="product-container">';
+        element += '<img src="' + product.img_src + '" />';
+        element += '<div class="product-text">';
+        element += "<strong>" + product.name + "</strong><br />";
+        element += product.description + "<br />";
+        element += "<em>" + product.category + "</em>";
+        element += "</div></div>";
+        return element;
+      }
+
       $(document).ready(function () {
         $.get("products.json", function (data) {
           let products = data.products;
+
+          // display product list on the page
           products.forEach(function (product) {
-            console.log(
-              product.product_name +
-                " // " +
-                product.description +
-                " // " +
-                product.category
-            );
+            $("#main-product-container").append(buildProductHTML(product));
           });
         });
       });

@@ -1,112 +1,106 @@
 {
   "products": [
     {
-      "product_name": "Mini Camera",
+      "name": "Mini Camera",
       "description": "Discreet surveillance with high-quality video and audio",
       "category": "Surveillance",
-      "image_path": "#"
+      "img_src": "#"
     },
     {
-      "product_name": "Night Vision Binoculars",
+      "name": "Night Vision Binoculars",
       "description": "See clearly in the dark",
       "category": "Surveillance",
-      "image_path": "#"
+      "img_src": "#"
     },
     {
-      "product_name": "GPS Tracking Devices",
+      "name": "GPS Tracking Devices",
       "description": "Real-time location tracking for people or assets",
       "category": "Surveillance",
-      "image_path": "#"
+      "img_src": "#"
     },
     {
-      "product_name": "Listening Devices",
+      "name": "Listening Devices",
       "description": "Capture clear audio discreetly",
       "category": "Surveillance",
-      "image_path": "#"
+      "img_src": "#"
     },
     {
-      "product_name": "Microphone Bugs",
+      "name": "Microphone Bugs",
       "description": "Capture conversations with hidden bugs",
       "category": "Surveillance",
-      "image_path": "#"
+      "img_src": "#"
     },
     {
-      "product_name": "Covert Body Cameras",
+      "name": "Covert Body Cameras",
       "description": "Record video and audio with hidden body-worn cameras",
       "category": "Surveillance",
-      "image_path": "#"
+      "img_src": "#"
     },
     {
-      "product_name": "Latex Masks",
-      "description": "Transform your appearance with realistic latex masks",
-      "category": "Disguise",
-      "image_path": "#"
-    },
-    {
-      "product_name": "Voice Modulators",
+      "name": "Voice Modulators",
       "description": "Change your voice for anonymity",
       "category": "Disguise",
-      "image_path": "#"
+      "img_src": "#"
     },
     {
-      "product_name": "Fake Passports",
+      "name": "Fake Passports",
       "description": "Expertly crafted forged passports",
       "category": "Disguise",
-      "image_path": "#"
+      "img_src": "#"
     },
     {
-      "product_name": "Disguise Kits",
+      "name": "Disguise Kits",
       "description": "Create covers with wigs, makeup, and accessories",
       "category": "Disguise",
-      "image_path": "#"
+      "img_src": "#"
     },
     {
-      "product_name": "Identity Theft Protection Software",
+      "name": "Identity Theft Protection Software",
       "description": "Safeguard your digital identity",
       "category": "Communication and Encryption",
-      "image_path": "#"
+      "img_src": "#"
     },
     {
-      "product_name": "Wig and Facial Hair Sets",
+      "name": "Wig and Facial Hair Sets",
       "description": "Blend in with comfortable, easy-to-apply sets",
       "category": "Disguise and Identity",
-      "image_path": "#"
+      "img_src": "#"
     },
     {
-      "product_name": "Encrypted Smartphones",
+      "name": "Encrypted Smartphones",
       "description": "Secure communication with encryption features",
       "category": "Communication and Encryption",
-      "image_path": "#"
+      "img_src": "#"
     },
     {
-      "product_name": "Secure Communication Apps",
+      "name": "Secure Communication Apps",
       "description": "Keep messages and calls confidential",
       "category": "Communication and Encryption",
-      "image_path": "#"
+      "img_src": "#"
     },
     {
-      "product_name": "Cryptographic Cipher Devices",
+      "name": "Cryptographic Cipher Devices",
       "description": "Encode and decode messages with advanced encryption",
       "category": "Communication and Encryption",
-      "image_path": "#"
+      "img_src": "#"
     },
     {
-      "product_name": "Signal Blockers",
+      "name": "Signal Blockers",
       "description": "Prevent tracking via GPS and mobile networks",
       "category": "Communication and Encryption",
-      "image_path": "#"
+      "img_src": "#"
     },
     {
-      "product_name": "Covert Morse Code Kits",
+      "name": "Covert Morse Code Kits",
       "description": "Learn Morse code for discreet messaging",
       "category": "Communication and Encryption",
-      "image_path": "#"
+      "img_src": "#"
     },
     {
-      "product_name": "Radio Scanners",
+      "name": "Radio Scanners",
       "description": "Intercept and decode various radio frequencies",
       "category": "Communication and Encryption",
-      "image_path": "#"
+      "img_src": "#"
     }
   ]
 }

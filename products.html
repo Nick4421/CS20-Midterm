@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -93,5 +94,22 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+      "use strict";
+      $(document).ready(function () {
+        $.get("products.json", function (data) {
+          let products = data.products;
+          products.forEach(function (product) {
+            console.log(
+              product.product_name +
+                " // " +
+                product.description +
+                " // " +
+                product.category
+            );
+          });
+        });
+      });
+    </script>
   </body>
 </html>

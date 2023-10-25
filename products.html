@@ -60,14 +60,14 @@
       </ul>
     </footer>
 
-    <script src="script.js"></script>
     <script>
       "use strict";
 
       // builds html code for a given product
       function buildProductHTML(product) {
         let element = "";
-        element += '<div class="product-container">';
+        element += '<div class="product-container" ';
+        element += 'id="' + product.name.replaceAll(" ", "-") + '">';
         element += '<img src="' + product.img_src + '" />';
         element += '<div class="product-text">';
         element += "<strong>" + product.name + "</strong><br />";
@@ -78,13 +78,25 @@
       }
 
       $(document).ready(function () {
+        let categoryDict = {};
         $.get("products.json", function (data) {
           let products = data.products;
 
           // display product list on the page
           products.forEach(function (product) {
+            if (!(product.category in categoryDict)) {
+              // make a key if the key does not exist
+              categoryDict[product.category] = [];
+            }
+
+            categoryDict[product.category].push(product.name);
             $("#main-product-container").append(buildProductHTML(product));
           });
+        });
+
+        // access dictionary once the get request is complete
+        $.get("products.json").done(function () {
+          console.log(categoryDict);
         });
       });
     </script>

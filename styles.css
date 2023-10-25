@@ -5,8 +5,14 @@
   font-family: "Lato", sans-serif;
   background-color: #121212;
   color: #0bde00;
-  /* color: #d3d3d3; */
   text-decoration: none;
+}
+
+h1 {
+  color: #d3d3d3;
+  font-weight: 900;
+  text-align: center;
+  font-size: 40px;
 }
 
 /* Begine Nav Bar Styling */
@@ -94,7 +100,10 @@ footer img {
 }
 
 .product-container img {
-  background-color: red;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 12px;
 }
 
 /* Product title */

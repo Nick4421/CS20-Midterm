@@ -4,103 +4,61 @@
       "name": "Mini Camera",
       "description": "Discreet surveillance with high-quality video and audio",
       "category": "Surveillance",
-      "img_src": "#"
+      "img_src": "media/products/mini-camera.jpg"
     },
     {
       "name": "Night Vision Binoculars",
       "description": "See clearly in the dark",
       "category": "Surveillance",
-      "img_src": "#"
+      "img_src": "media/products/night-vision-binoculars.jpg"
     },
     {
       "name": "GPS Tracking Devices",
       "description": "Real-time location tracking for people or assets",
       "category": "Surveillance",
-      "img_src": "#"
+      "img_src": "media/products/gps-tracker.jpg"
     },
     {
       "name": "Listening Devices",
       "description": "Capture clear audio discreetly",
       "category": "Surveillance",
-      "img_src": "#"
-    },
-    {
-      "name": "Microphone Bugs",
-      "description": "Capture conversations with hidden bugs",
-      "category": "Surveillance",
-      "img_src": "#"
-    },
-    {
-      "name": "Covert Body Cameras",
-      "description": "Record video and audio with hidden body-worn cameras",
-      "category": "Surveillance",
-      "img_src": "#"
+      "img_src": "media/products/listening-device.jpg"
     },
     {
       "name": "Voice Modulators",
       "description": "Change your voice for anonymity",
       "category": "Disguise",
-      "img_src": "#"
+      "img_src": "media/products/voice-modulator.jpg"
     },
     {
       "name": "Fake Passports",
       "description": "Expertly crafted forged passports",
       "category": "Disguise",
-      "img_src": "#"
-    },
-    {
-      "name": "Disguise Kits",
-      "description": "Create covers with wigs, makeup, and accessories",
-      "category": "Disguise",
-      "img_src": "#"
-    },
-    {
-      "name": "Identity Theft Protection Software",
-      "description": "Safeguard your digital identity",
-      "category": "Communication and Encryption",
-      "img_src": "#"
+      "img_src": "media/products/fake-passport.jpg"
     },
     {
       "name": "Wig and Facial Hair Sets",
       "description": "Blend in with comfortable, easy-to-apply sets",
-      "category": "Disguise and Identity",
-      "img_src": "#"
-    },
-    {
-      "name": "Encrypted Smartphones",
-      "description": "Secure communication with encryption features",
-      "category": "Communication and Encryption",
-      "img_src": "#"
-    },
-    {
-      "name": "Secure Communication Apps",
-      "description": "Keep messages and calls confidential",
-      "category": "Communication and Encryption",
-      "img_src": "#"
-    },
-    {
-      "name": "Cryptographic Cipher Devices",
-      "description": "Encode and decode messages with advanced encryption",
-      "category": "Communication and Encryption",
-      "img_src": "#"
+      "category": "Disguise",
+      "img_src": "media/products/wig-and-hair-set.jpg"
     },
     {
       "name": "Signal Blockers",
       "description": "Prevent tracking via GPS and mobile networks",
-      "category": "Communication and Encryption",
-      "img_src": "#"
+      "category": "Communication",
+      "img_src": "media/products/signal-jammer.jpg"
     },
     {
       "name": "Covert Morse Code Kits",
       "description": "Learn Morse code for discreet messaging",
-      "category": "Communication and Encryption",
-      "img_src": "#"
+      "category": "Communication",
+      "img_src": "media/products/morse-code.jpg"
     },
     {
       "name": "Radio Scanners",
       "description": "Intercept and decode various radio frequencies",
-      "category": "Communication and Encryption",
-      "img_src": "#"
+      "category": "Communication",
+      "img_src": "media/products/radio-scanner.jpg"
     }
   ]
 }

@@ -81,26 +81,13 @@
       }
 
       $(document).ready(function () {
-        let categoryDict = {};
         $.get("products.json", function (data) {
           let products = data.products;
 
           // display product list on the page
           products.forEach(function (product) {
-            if (!(product.category in categoryDict)) {
-              // make a key if the key does not exist
-              categoryDict[product.category] = [];
-            }
-
-            categoryDict[product.category].push(product.name);
             $("#main-product-container").append(buildProductHTML(product));
           });
-        });
-
-        // might have to delete this feature for time purposes
-        // access dictionary once the get request is complete
-        $.get("products.json").done(function () {
-          console.log(categoryDict);
         });
       });
     </script>

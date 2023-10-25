@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,6 +37,9 @@
     </ul>
 
     <h1>Reviews</h1>
+    <h2>Read some reviews from our valued customers</h2>
+
+    <div class="reviews-container" id="reviews-container"></div>
 
     <footer>
       <ul>
@@ -57,5 +61,42 @@
         </li>
       </ul>
     </footer>
+    <script>
+      // builds html code for given review
+      function buildReviewHTML(review) {
+        let element = "";
+        element += '<div class="review">';
+        element += "<strong>" + review.name + "</strong><br />";
+        element += "<em>" + review.profession + "</em><br />";
+        element += review.review + "</div>";
+        return element;
+      }
+
+      // shows a random 3 reviews every time
+      $(document).ready(function () {
+        $.get("reviews.json", function (data) {
+          let allReviews = [];
+          let reviews = data.reviews;
+
+          reviews.forEach(function (review) {
+            // $("#reviews-container").append(buildReviewHTML(review));
+            allReviews.push(buildReviewHTML(review));
+          });
+
+          // shuffle allReviews array to ensure randomness
+          for (let i = allReviews.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [allReviews[i], allReviews[j]] = [allReviews[j], allReviews[i]];
+          }
+
+          // display the first 3 elements in the array
+          // because array is shuffled, first 3 should be random
+          // assume that there are at least 3 reviews always
+          $("#reviews-container").append(allReviews[0]);
+          $("#reviews-container").append(allReviews[1]);
+          $("#reviews-container").append(allReviews[2]);
+        });
+      });
+    </script>
   </body>
 </html>

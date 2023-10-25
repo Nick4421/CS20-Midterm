@@ -37,6 +37,9 @@
     </ul>
 
     <h1>Products</h1>
+    <h2>
+      Browse our supply of first-class products for everything stealth related
+    </h2>
     <div class="all-products-container" id="main-product-container"></div>
 
     <footer>
@@ -94,6 +97,7 @@
           });
         });
 
+        // might have to delete this feature for time purposes
         // access dictionary once the get request is complete
         $.get("products.json").done(function () {
           console.log(categoryDict);

@@ -21,33 +21,41 @@
     <title>Services</title>
     <link rel="icon" href="media/tab-icon.png" />
     <style>
+      .container {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
 
-        .container {
-            margin-top: 2%;
-            display: flex;
-            justify-content: space-between;
-            background-color: #0bde00;
-        }
+      h2 a:hover {
+        color: #d3d3d3;
+      }
 
-        .section {
-            flex: 1;
-            background-color: #0bde00; /* Green background color */
-            padding: 20px;
-            border-radius: 8px;
-            margin: 0 1%;
-            text-align: center; /* Center text within the section */
-        }
+      .section {
+        flex: 1;
+        text-align: center;
+        background-color: #0bde00;
+        font-size: 15px;
+        padding: 20px;
+        border-radius: 20px;
+        margin: 5px 20px;
+      }
 
+      .section * {
+        background-color: #0bde00;
+        color: #121212;
+      }
 
-        .section p {
-            margin-bottom: 15px;
-            margin-top: 5%;
-        }
+      .section p {
+        margin-bottom: 15px;
+        margin-top: 5%;
+      }
 
-        .section strong {
-            color: #ffffff;
-        }
-
+      .section strong {
+        color: #121212;
+        font-size: 18px;
+      }
     </style>
   </head>
 
@@ -66,7 +74,7 @@
 
     <h1>Services</h1>
 
-    <h2>Schedule an appoitment <a href="contact_us.html">HERE</a></h2>
+    <h2>Schedule an appointment <a href="contact_us.html">HERE</a></h2>
     <div class="container">
       <div class="section" id="services-container1"></div>
       <div class="section" id="services-container2"></div>
@@ -93,94 +101,104 @@
         </li>
       </ul>
     </footer>
-      <script>
-
-
+    <script>
       const service_data = {
-        "services": [
-            {
-                "category": "Operational Training and Simulation",
-                "services": [
-                    {
-                        "name": "Espionage Training",
-                        "description": "Specialized training programs designed to teach intelligence operatives the art of espionage, including surveillance techniques, covert communication methods, and infiltration strategies."
-                    },
-                    {
-                        "name": "Cybersecurity Workshops",
-                        "description": "Training sessions focused on cybersecurity awareness, digital threat detection, and secure communication methods, essential for protecting sensitive information from online threats."
-                    },
-                    {
-                        "name": "Tactical Drills",
-                        "description": "Realistic and scenario-based tactical exercises to prepare agents for various mission scenarios, enhancing their decision-making abilities and teamwork skills."
-                    }
-                ]
-            },
-            {
-                "category": "Technical Gear Development and Maintenance",
-                "services": [
-                    {
-                        "name": "Advanced Surveillance Equipment",
-                        "description": "Design, development, and supply of cutting-edge surveillance technology, including hidden cameras, audio recording devices, and tracking systems, tailored to meet the specific needs of covert operations."
-                    },
-                    {
-                        "name": "Secure Communication Devices",
-                        "description": "Creation of encrypted communication devices and software to ensure secure and untraceable communication channels for agents in the field."
-                    },
-                    {
-                        "name": "Gear Maintenance and Upgrades",
-                        "description": "Regular maintenance, repair, and upgrading services for all types of covert equipment, ensuring that the agency's tools are always in optimal working condition."
-                    }
-                ]
-            },
-            {
-                "category": "Intelligence Analysis and Strategy Consulting",
-                "services": [
-                    {
-                        "name": "Data Analysis and Pattern Recognition",
-                        "description": "Utilizing advanced data analytics and machine learning techniques to process large volumes of data, identify patterns, and extract actionable intelligence for mission planning and decision-making."
-                    },
-                    {
-                        "name": "Risk Assessment and Mitigation",
-                        "description": "Conducting thorough risk assessments of potential missions or operations, identifying vulnerabilities, and developing strategies to mitigate risks, ensuring the safety of agents and the success of the mission."
-                    },
-                    {
-                        "name": "Strategic Planning",
-                        "description": "Providing expert consultation on long-term strategic planning, including threat assessment, geopolitical analysis, and policy recommendations, to assist secret agencies in shaping their future operations and initiatives."
-                    }
-                ]
-            }
-        ]
-    };
+        services: [
+          {
+            category: "Operational Training and Simulation",
+            services: [
+              {
+                name: "Espionage Training",
+                description:
+                  "Specialized training programs designed to teach intelligence operatives the art of espionage, including surveillance techniques, covert communication methods, and infiltration strategies.",
+              },
+              {
+                name: "Cybersecurity Workshops",
+                description:
+                  "Training sessions focused on cybersecurity awareness, digital threat detection, and secure communication methods, essential for protecting sensitive information from online threats.",
+              },
+              {
+                name: "Tactical Drills",
+                description:
+                  "Realistic and scenario-based tactical exercises to prepare agents for various mission scenarios, enhancing their decision-making abilities and teamwork skills.",
+              },
+            ],
+          },
+          {
+            category: "Technical Gear Development and Maintenance",
+            services: [
+              {
+                name: "Advanced Surveillance Equipment",
+                description:
+                  "Design, development, and supply of cutting-edge surveillance technology, including hidden cameras, audio recording devices, and tracking systems, tailored to meet the specific needs of covert operations.",
+              },
+              {
+                name: "Secure Communication Devices",
+                description:
+                  "Creation of encrypted communication devices and software to ensure secure and untraceable communication channels for agents in the field.",
+              },
+              {
+                name: "Gear Maintenance and Upgrades",
+                description:
+                  "Regular maintenance, repair, and upgrading services for all types of covert equipment, ensuring that the agency's tools are always in optimal working condition.",
+              },
+            ],
+          },
+          {
+            category: "Intelligence Analysis and Strategy Consulting",
+            services: [
+              {
+                name: "Data Analysis and Pattern Recognition",
+                description:
+                  "Utilizing advanced data analytics and machine learning techniques to process large volumes of data, identify patterns, and extract actionable intelligence for mission planning and decision-making.",
+              },
+              {
+                name: "Risk Assessment and Mitigation",
+                description:
+                  "Conducting thorough risk assessments of potential missions or operations, identifying vulnerabilities, and developing strategies to mitigate risks, ensuring the safety of agents and the success of the mission.",
+              },
+              {
+                name: "Strategic Planning",
+                description:
+                  "Providing expert consultation on long-term strategic planning, including threat assessment, geopolitical analysis, and policy recommendations, to assist secret agencies in shaping their future operations and initiatives.",
+              },
+            ],
+          },
+        ],
+      };
 
-        const container1 = document.getElementById("services-container1");
-        const container2 = document.getElementById("services-container2");
-        const container3 = document.getElementById("services-container3");
+      const container1 = document.getElementById("services-container1");
+      const container2 = document.getElementById("services-container2");
+      const container3 = document.getElementById("services-container3");
 
-        service_data.services.forEach(category => {
-            const categoryDiv = document.createElement("div");
+      service_data.services.forEach((category) => {
+        const categoryDiv = document.createElement("div");
 
-            const categoryHeading = document.createElement("h2");
-            categoryHeading.textContent = category.category;
-            categoryDiv.appendChild(categoryHeading);
+        const categoryHeading = document.createElement("h2");
+        categoryHeading.textContent = category.category;
+        categoryDiv.appendChild(categoryHeading);
 
-            category.services.forEach(service => {
-                const serviceName = service.name;
-                const serviceDescription = service.description;
+        category.services.forEach((service) => {
+          const serviceName = service.name;
+          const serviceDescription = service.description;
 
-                const serviceElement = document.createElement("p");
-                serviceElement.innerHTML = `<strong>${serviceName}</strong>: ${serviceDescription}`;
-                categoryDiv.appendChild(serviceElement);
-            });
-
-            if (category.category === "Operational Training and Simulation") {
-                container1.appendChild(categoryDiv);
-            } else if (category.category === "Technical Gear Development and Maintenance") {
-                container2.appendChild(categoryDiv);
-            } else if (category.category === "Intelligence Analysis and Strategy Consulting") {
-                container3.appendChild(categoryDiv);
-            }
+          const serviceElement = document.createElement("p");
+          serviceElement.innerHTML = `<strong>${serviceName}</strong><br />${serviceDescription}`;
+          categoryDiv.appendChild(serviceElement);
         });
 
+        if (category.category === "Operational Training and Simulation") {
+          container1.appendChild(categoryDiv);
+        } else if (
+          category.category === "Technical Gear Development and Maintenance"
+        ) {
+          container2.appendChild(categoryDiv);
+        } else if (
+          category.category === "Intelligence Analysis and Strategy Consulting"
+        ) {
+          container3.appendChild(categoryDiv);
+        }
+      });
     </script>
   </body>
 </html>

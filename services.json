@@ -1,7 +1,8 @@
 {
   "services": [
     {
-      "Operational Training and Simulation": [
+      "category": "Operational Training and Simulation",
+      "services": [
         {
           "name": "Espionage Training",
           "description": "Specialized training programs designed to teach intelligence operatives the art of espionage, including surveillance techniques, covert communication methods, and infiltration strategies."
@@ -17,7 +18,8 @@
       ]
     },
     {
-      "Technical Gear Development and Maintenance": [
+      "category": "Technical Gear Development and Maintenance",
+      "services": [
         {
           "name": "Advanced Surveillance Equipment",
           "description": "Design, development, and supply of cutting-edge surveillance technology, including hidden cameras, audio recording devices, and tracking systems, tailored to meet the specific needs of covert operations."
@@ -33,7 +35,8 @@
       ]
     },
     {
-      "Intelligence Analysis and Strategy Consulting": [
+      "category": "Intelligence Analysis and Strategy Consulting",
+      "services": [
         {
           "name": "Data Analysis and Pattern Recognition",
           "description": "Utilizing advanced data analytics and machine learning techniques to process large volumes of data, identify patterns, and extract actionable intelligence for mission planning and decision-making."

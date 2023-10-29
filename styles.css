@@ -24,6 +24,10 @@ h2 {
 }
 
 /* Begine Nav Bar Styling */
+
+.nav-bar{
+  position: fixed;
+}
 .nav-bar li {
   display: inline-block;
   margin: 20px 20px;

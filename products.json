@@ -6,11 +6,12 @@
       "category": "Surveillance",
       "img_src": "media/products/mini-camera.jpg"
     },
+
     {
-      "name": "Night Vision Binoculars",
-      "description": "See clearly in the dark",
-      "category": "Surveillance",
-      "img_src": "media/products/night-vision-binoculars.jpg"
+      "name": "Signal Blockers",
+      "description": "Prevent tracking via GPS and mobile networks",
+      "category": "Communication",
+      "img_src": "media/products/signal-jammer.jpg"
     },
     {
       "name": "GPS Tracking Devices",
@@ -43,10 +44,10 @@
       "img_src": "media/products/wig-and-hair-set.jpg"
     },
     {
-      "name": "Signal Blockers",
-      "description": "Prevent tracking via GPS and mobile networks",
-      "category": "Communication",
-      "img_src": "media/products/signal-jammer.jpg"
+      "name": "Night Vision Binoculars",
+      "description": "See clearly in the dark",
+      "category": "Surveillance",
+      "img_src": "media/products/night-vision-binoculars.jpg"
     },
     {
       "name": "Covert Morse Code Kits",

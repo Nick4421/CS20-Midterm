@@ -54,6 +54,8 @@
           // display product list on the page
           products.forEach(function (product) {
             $("#main-product-container").append(buildProductHTML(product));
+            $("#" + product.name.replaceAll(" ", "-")).hide();
+            $("#" + product.name.replaceAll(" ", "-")).slideDown(600, "swing");
           });
         });
       });
